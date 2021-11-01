@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "nav  documentation"
+    "nav  documentation";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+}
+
+main {
+    grid-area: documentation;
+    padding: 40px;
+    max-width: 1500px;
+}
+
+section > header {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 20px 20px 20px 0;
+}
+
+section > p {
+    padding: 15px;
+    color: #4d4e53;
+    overflow: none;
+}
+
+li {
+    color: #4d4e53;
+    padding: 10px 10px 10px 10px;
+    margin-left: 60px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px rgb(138, 137, 137);
+    font-size: 18px;
+    position: fixed;
+    height: 100%;
+}
+
+nav > header {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 25px;
+}
+
+
+nav > a {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 15px 20px 15px 30px;
+    border-top: solid 1px #333;
+    color: black;
+}
+
+nav > a::before {
+    border-top: solid 1px #333;
+    margin-left: -20px;
+}
+
+.circle > li {
+    margin-left: 90px;
+}
+
+@media screen (max-width: 500px)  {
+    
+}
